@@ -1,0 +1,18 @@
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Личный кабинет</span>
+    <% if (currentUser) { %>
+      <nav class="nav-links">
+        <span class="user-info"><%= currentUser.fullName %> (<%= currentUser.role === 'admin' ? 'админ' : 'студент' %>)</span>
+        <% if (currentUser.role === 'admin') { %>
+          <a href="/admin">Админ-панель</a>
+        <% } else { %>
+          <a href="/">Мои оценки</a>
+        <% } %>
+        <form action="/logout" method="POST" class="logout-form">
+          <button type="submit">Выйти</button>
+        </form>
+      </nav>
+    <% } %>
+  </div>
+</header>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('partials/head', { title: 'Админ-панель' }) %>
+<body>
+  <%- include('partials/nav') %>
+  <main class="container">
+    <h1>Админ-панель — выставление оценок</h1>
+    <%- include('partials/messages') %>
+    <div class="table-scroll">
+      <table class="grades-table admin-table">
+        <thead>
+          <tr>
+            <th>Студент</th>
+            <% subjects.forEach(function(subject) { %>
+              <th><%= subject.name %></th>
+            <% }) %>
+          </tr>
+        </thead>
+        <tbody>
+          <% students.forEach(function(student) { %>
+            <tr>
+              <td><%= student.fullName %></td>
+              <% subjects.forEach(function(subject) { %>
+                <td>
+                  <form action="/admin/grades" method="POST" class="grade-form">
+                    <input type="hidden" name="studentId" value="<%= student.id %>" />
+                    <input type="hidden" name="subjectId" value="<%= subject.id %>" />
+                    <select name="value" onchange="this.form.submit()">
+                      <option value="">—</option>
+                      <% [1,2,3,4,5].forEach(function(v) { %>
+                        <option value="<%= v %>" <%= gradeMap[student.id][subject.id] === v ? 'selected' : '' %>><%= v %></option>
+                      <% }) %>
+                    </select>
+                  </form>
+                </td>
+              <% }) %>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

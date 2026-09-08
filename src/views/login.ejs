@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('partials/head', { title: 'Вход' }) %>
+<body class="login-body">
+  <main class="login-card">
+    <h1>Вход в личный кабинет</h1>
+    <%- include('partials/messages') %>
+    <form action="/login" method="POST" class="login-form">
+      <label for="username">Логин</label>
+      <input type="text" id="username" name="username" autocomplete="username" required autofocus />
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+
+      <button type="submit">Войти</button>
+    </form>
+  </main>
+</body>
+</html>

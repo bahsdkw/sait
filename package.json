@@ -1,0 +1,17 @@
+{
+  "name": "grades-cabinet",
+  "version": "1.0.0",
+  "description": "Личный кабинет с оценками и админ-панелью",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

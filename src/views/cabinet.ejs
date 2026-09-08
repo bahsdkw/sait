@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('partials/head', { title: 'Мои оценки' }) %>
+<body>
+  <%- include('partials/nav') %>
+  <main class="container">
+    <h1>Мои оценки</h1>
+    <%- include('partials/messages') %>
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Предмет</th>
+          <th>Оценка</th>
+          <th>Обновлено</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% rows.forEach(function(row) { %>
+          <tr>
+            <td><%= row.subject.name %></td>
+            <td class="<%= row.grade ? 'grade-value grade-' + row.grade.value : 'grade-empty' %>">
+              <%= row.grade ? row.grade.value : '—' %>
+            </td>
+            <td><%= row.grade ? new Date(row.grade.updatedAt).toLocaleString('ru-RU') : '' %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
