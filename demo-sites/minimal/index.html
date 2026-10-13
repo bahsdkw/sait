@@ -25,33 +25,33 @@ body{background:var(--bg);color:var(--ink);font:400 16px/1.5 Archivo,system-ui,s
 .mono{font-family:"IBM Plex Mono",monospace}
 a{color:inherit}
 .top{position:sticky;top:0;z-index:15;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(14,14,13,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.logo{font:400 22px Anton,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.logo{font:400 22px Anton,Impact,"Arial Narrow",sans-serif;letter-spacing:.14em;text-transform:uppercase}
 .top a.t{font:500 13px "IBM Plex Mono";text-decoration:none;color:var(--brass)}
 /* hero */
 .hero{position:relative;padding:28px 16px 0;border-bottom:1px solid var(--line);overflow:hidden}
 .hero .tag{font:500 12px "IBM Plex Mono";color:var(--dim);letter-spacing:.1em;text-transform:uppercase;display:flex;gap:10px;flex-wrap:wrap}
 .hero .tag span:before{content:"/ ";color:var(--brass)}
-h1{font:400 clamp(84px,27vw,200px)/.86 Anton,sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin:18px 0 18px}
+h1{font:400 clamp(84px,27vw,200px)/.86 Anton,Impact,"Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:-.01em;margin:18px 0 18px}
 h1 span{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
 .hero p.l{max-width:32ch;color:#c9c4b8;margin-bottom:22px}
 .cta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
 .b{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;font:500 14px "IBM Plex Mono";text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:1.5px solid var(--ink)}
 .b.f{background:var(--brass);border-color:var(--brass);color:#111}
-.hero svg{position:absolute;right:-40px;bottom:-8px;width:260px;height:auto;opacity:.9}
+.hero svg{position:absolute;right:-50px;bottom:40px;width:230px;height:auto;opacity:.28;z-index:0}.hero>*:not(svg){position:relative;z-index:1}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin:0 -16px;position:relative;background:var(--bg)}
 .stats div{padding:14px 16px;border-right:1px solid var(--line)}
 .stats div:last-child{border:0}
-.stats b{display:block;font:400 34px/1 Anton;color:var(--brass)}
+.stats b{display:block;font:400 34px/1 Anton,Impact,sans-serif;color:var(--brass)}
 .stats small{font:400 11.5px "IBM Plex Mono";color:var(--dim);text-transform:uppercase;letter-spacing:.05em}
 /* sections */
 section{padding:44px 16px;border-bottom:1px solid var(--line)}
 .h{display:flex;align-items:baseline;gap:12px;margin-bottom:22px}
 .h i{font:500 13px "IBM Plex Mono";color:var(--brass);font-style:normal}
-h2{font:400 clamp(40px,11vw,64px)/.95 Anton;text-transform:uppercase;letter-spacing:.01em}
+h2{font:400 clamp(40px,11vw,64px)/.95 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em}
 /* promo */
 .promo{background:var(--brass);color:#111;padding:26px 16px;border-bottom:1px solid var(--line);display:grid;gap:8px;position:relative}
 .promo .k{font:500 12px "IBM Plex Mono";text-transform:uppercase;letter-spacing:.1em}
-.promo .code{font:400 clamp(44px,13vw,84px)/1 Anton;letter-spacing:.04em}
+.promo .code{font:400 clamp(44px,13vw,84px)/1 Anton,Impact,sans-serif;letter-spacing:.04em}
 .promo p{max-width:40ch;font-weight:600}
 .promo small{font:500 12px "IBM Plex Mono"}
 /* price */
@@ -59,24 +59,24 @@ h2{font:400 clamp(40px,11vw,64px)/.95 Anton;text-transform:uppercase;letter-spac
 .pl li{display:grid;grid-template-columns:1fr auto;column-gap:14px;padding:15px 0;border-bottom:1px dashed var(--line);align-items:baseline}
 .pl .n{font-weight:600}
 .pl .d{grid-column:1;color:var(--dim);font:400 12.5px "IBM Plex Mono";margin-top:2px}
-.pl .p{grid-row:1/3;grid-column:2;font:400 28px Anton;color:var(--brass);white-space:nowrap}
+.pl .p{grid-row:1/3;grid-column:2;font:400 28px Anton,Impact,sans-serif;color:var(--brass);white-space:nowrap}
 .pl li.hot{background:var(--panel);padding:18px 14px;margin:6px -14px;border:1px solid var(--brass)}
 .pl li.hot .n:after{content:"выгодно";margin-left:8px;font:500 10px "IBM Plex Mono";background:var(--red);color:#fff;padding:2px 6px;text-transform:uppercase;vertical-align:middle}
 .note{margin-top:14px;color:var(--dim);font:400 12.5px "IBM Plex Mono"}
 /* grid */
 .g{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
 .g>div{background:var(--bg);padding:18px 16px}
-.g h3{font:400 24px Anton;text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px}
+.g h3{font:400 24px Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px}
 .g p{color:var(--dim);font-size:14.5px}
 /* team */
 .team{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .m{background:var(--panel);border:1px solid var(--line);padding:16px}
 .m svg{width:44px;height:44px;margin-bottom:10px}
-.m b{font:400 24px Anton;text-transform:uppercase;letter-spacing:.04em;display:block}
+.m b{font:400 24px Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;display:block}
 .m small{color:var(--dim);font:400 12px "IBM Plex Mono"}
 /* reviews */
 .rv{display:flex;align-items:flex-end;gap:16px;margin-bottom:18px}
-.rv b{font:400 110px/.8 Anton;color:var(--ink)}
+.rv b{font:400 110px/.8 Anton,Impact,sans-serif;color:var(--ink)}
 .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tags span{border:1px solid var(--line);padding:7px 11px;font:400 12.5px "IBM Plex Mono";color:#c9c4b8}
 .tags em{font-style:normal;color:var(--brass)}
