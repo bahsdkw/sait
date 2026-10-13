@@ -1,37 +1,85 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Minimal — Барбершоп в Москве</title>
+<title>Minimal — Барбершоп, Москва</title>
 <meta name="description" content="Барбершоп в центре Москвы. 5,0 на Яндекс Картах (77 оценок), «Good place 2026».">
+<meta name="theme-color" content="#1f2933">
+<meta property="og:title" content="Minimal"><meta property="og:description" content="Барбершоп в центре Москвы. 5,0 на Яндекс Картах (77 оценок), «Good place 2026».">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Minimal","telephone":"+7 925 601-01-11","address":{"@type":"PostalAddress","streetAddress":"Мясницкая ул., 22с1","addressLocality":"Москва","addressCountry":"RU"}}</script>
 <style>
-:root{--c:#1f2933;--bg:#fafaf8;--tx:#1d1d1b;--mut:#6b6b66;--card:#fff}
-@media(prefers-color-scheme:dark){:root{--bg:#161615;--tx:#f1f1ee;--mut:#a3a39d;--card:#222221}}
-*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx)}
-.w{max-width:760px;margin:0 auto;padding:0 16px}
-header.h{background:var(--c);color:#fff;padding:56px 0 48px}
-header.h h1{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.15}
-header.h p{margin:0 0 6px;opacity:.92}.tag{font-size:14px;opacity:.85;margin-bottom:12px!important}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.b{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:600;text-decoration:none;background:#fff;color:#111}
-.b.o{background:transparent;color:#fff;border:2px solid #fff}
-section{padding:32px 0}h2{margin:0 0 14px;font-size:24px}
-.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(128,128,128,.25)}
-.row b{white-space:nowrap;color:var(--c)}
-ul.x{padding-left:20px;color:var(--mut)}.card{background:var(--card);border-radius:12px;padding:18px;border:1px solid rgba(128,128,128,.2)}
-.card p{margin:6px 0}a{color:var(--c)}footer{padding:24px 0 40px;color:var(--mut);font-size:13px}
+:root{--c:#1f2933;--bg:#f6f5f2;--tx:#17171a;--mut:#62626b;--card:#fff;--line:rgba(20,20,30,.1)}
+@media(prefers-color-scheme:dark){:root{--bg:#121214;--tx:#f3f3f1;--mut:#a4a4ad;--card:#1c1c20;--line:rgba(255,255,255,.12)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 Manrope,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);padding-bottom:76px}
+.w{max-width:880px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:800;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.p{background:var(--c);color:#fff;box-shadow:0 8px 22px -8px var(--c)}
+.btn.s{background:transparent;color:inherit;border-color:var(--line)}
+.top .btn{padding:9px 14px;font-size:14px}
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 45%,#0b0b0f));padding:64px 0 56px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.1)}
+.hero:before{width:360px;height:360px;right:-120px;top:-140px}.hero:after{width:220px;height:220px;right:60px;bottom:-130px;background:rgba(255,255,255,.07)}
+.hero .w{position:relative}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin:0 0 14px}
+h1{margin:0 0 16px;font-size:clamp(32px,7.5vw,56px);line-height:1.05;letter-spacing:-.03em;font-weight:800;max-width:15em}
+.lead{max-width:34em;font-size:18px;opacity:.93;margin:0 0 24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:99px;font-size:14px;font-weight:600}
+.hero .btn.p{background:#fff;color:#111;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.hero .btn.s{color:#fff;border-color:rgba(255,255,255,.5)}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+section{padding:44px 0 4px}
+h2{margin:0 0 6px;font-size:28px;letter-spacing:-.02em;font-weight:800}
+.sub{margin:0 0 20px;color:var(--mut)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.svc{display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-height:112px}
+.svc b{font-size:20px;color:var(--c);letter-spacing:-.01em}
+.svc span{font-weight:600}
+.note{font-size:13px;color:var(--mut);margin-top:12px}
+.pts{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin-top:14px}
+.pt{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+.pt svg{flex:none;margin-top:3px;color:#fff;background:var(--c);border-radius:50%;padding:3px;width:22px;height:22px}
+.steps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:s}
+.step{counter-increment:s}.step:before{content:counter(s);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--c);color:#fff;font-weight:800;margin-bottom:12px}
+.step b{display:block;margin-bottom:2px}.step span{color:var(--mut);font-size:15px}
+.ct{display:grid;gap:14px}.ci{display:flex;gap:12px;align-items:flex-start}.ci svg{flex:none;color:var(--c);margin-top:3px}
+.ci small{display:block;color:var(--mut)}a{color:inherit}.ci a{font-weight:700}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0));background:var(--card);border-top:1px solid var(--line)}
+.bar .btn{flex:1;justify-content:center}
+@media(min-width:760px){.bar{display:none}body{padding-bottom:0}}
+footer{padding:44px 0 40px;color:var(--mut);font-size:13px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style></head><body>
-<header class="h"><div class="w">
-<p class="tag">Барбершоп · Мясницкая ул.</p><h1>Minimal</h1><p>Барбершоп в центре Москвы. 5,0 на Яндекс Картах (77 оценок), «Good place 2026».</p>
-<div class="btns"><a class="b" href="tel:+79256010111">Позвонить +7 925 601-01-11</a><a class="b o" href="https://wa.me/79256010111">WhatsApp</a><a class="b o" href="https://t.me/+79096561280">Telegram</a></div>
+<div class="top"><div class="w"><div class="logo"><i></i>Minimal</div><a class="btn p" href="tel:+79256010111"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+7 925 601-01-11</a></div></div>
+<header class="hero"><div class="w">
+<p class="kicker">Барбершоп · Мясницкая ул.</p><h1>Minimal</h1><p class="lead">Барбершоп в центре Москвы. 5,0 на Яндекс Картах (77 оценок), «Good place 2026».</p>
+<div class="chips"><span class="chip">★ 5,0 · 68 отзывов</span><span class="chip">Good place 2026</span><span class="chip">−20% новым клиентам</span></div>
+<div class="cta"><a class="btn p" href="tel:+79256010111"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Записаться</a><a class="btn s" href="https://wa.me/79256010111"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>WhatsApp</a><a class="btn s" href="https://t.me/+79096561280"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Telegram</a></div>
 </div></header>
 <main class="w">
-<section><h2>Услуги и цены</h2><div class="row"><span>Мужская стрижка</span><b>от 2 000 ₽</b></div><div class="row"><span>Стрижка ПАПА+СЫН (2 ч)</span><b>5 400 ₽</b></div><div class="row"><span>Моделирование бороды (30 мин)</span><b>2 500 ₽</b></div><div class="row"><span>Камуфляж седины (1 ч)</span><b>2 000 ₽</b></div>
-<p style="color:var(--mut);font-size:13px">Цены ориентировочные, уточняйте при записи.</p><ul class="x"><li>−20% новым клиентам по коду «МИНИМАЛ25»</li><li>Подарочные сертификаты</li><li>Выезд на дом, детские стрижки</li><li>Оплата: наличные, карта, QR</li></ul></section>
-<section><h2>Контакты</h2><div class="card">
-<p><b>Адрес:</b> Москва, Мясницкая ул., 22с1 · <a href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2022%D1%811">на карте</a></p>
-<p><b>Режим работы:</b> Работаем до 22:00, запись обязательна</p>
-<p><b>Телефон:</b> <a href="tel:+79256010111">+7 925 601-01-11</a></p>
+<section class="rv"><h2>Услуги и цены</h2><p class="sub">Актуальную стоимость уточним при записи.</p>
+<div class="grid"><div class="card svc"><span>Мужская стрижка</span><b>от 2 000 ₽</b></div><div class="card svc"><span>Стрижка ПАПА+СЫН (2 ч)</span><b>5 400 ₽</b></div><div class="card svc"><span>Моделирование бороды (30 мин)</span><b>2 500 ₽</b></div><div class="card svc"><span>Камуфляж седины (1 ч)</span><b>2 000 ₽</b></div></div>
+<div class="pts"><div class="pt"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>−20% новым клиентам по коду «МИНИМАЛ25»</span></div><div class="pt"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Подарочные сертификаты</span></div><div class="pt"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Выезд на дом, детские стрижки</span></div><div class="pt"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Оплата: наличные, карта, QR</span></div></div></section>
+<section class="rv"><h2>Как записаться</h2><p class="sub">Три простых шага.</p><div class="steps">
+<div class="card step"><b>Позвоните или напишите</b><span>Телефон или WhatsApp — как вам удобнее.</span></div>
+<div class="card step"><b>Согласуем детали</b><span>Подберём услугу и удобное время.</span></div>
+<div class="card step"><b>Приходите</b><span>Ждём вас по адресу: Мясницкая ул., 22с1.</span></div></div></section>
+<section class="rv" id="contacts"><h2>Контакты</h2><p class="sub">Мы в Москве — приезжайте или напишите заранее.</p><div class="card ct">
+<div class="ci"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2022%D1%811">Москва, Мясницкая ул., 22с1</a><small>Открыть на карте</small></div></div>
+<div class="ci"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Работаем до 22:00, запись обязательна</b></div></div>
+<div class="ci"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+79256010111">+7 925 601-01-11</a><small>Звонок или WhatsApp</small></div></div>
 
-<div class="btns"><a class="b" style="background:var(--c);color:#fff" href="tel:+79256010111">Записаться</a></div></div></section>
+<div class="cta"><a class="btn p" href="tel:+79256010111"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Записаться</a><a class="btn s" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D1%8F%D1%81%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%2022%D1%811"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Построить маршрут</a></div></div></section>
 </main>
-<footer><div class="w">Демо-версия сайта. Данные взяты из публичных карточек организации; перед публикацией будут уточнены с владельцем.</div></footer>
+<footer><div class="w">Демо-версия сайта. Данные взяты из публичных карточек организации и будут уточнены с владельцем перед публикацией.</div></footer>
+<div class="bar"><a class="btn p" href="tel:+79256010111"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Позвонить</a><a class="btn s" href="https://wa.me/79256010111"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>WhatsApp</a></div>
+<script>const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(e=>o.observe(e));</script>
 </body></html>
