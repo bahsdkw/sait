@@ -1,85 +1,266 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>M_Studio — Ногтевая студия, Москва</title>
-<meta name="description" content="Маникюр и педикюр, наращивание. «Good place 2026» на Яндекс Картах: 4,9 по 1 586 оценкам.">
-<meta name="theme-color" content="#d1457a">
-<meta property="og:title" content="M_Studio"><meta property="og:description" content="Маникюр и педикюр, наращивание. «Good place 2026» на Яндекс Картах: 4,9 по 1 586 оценкам.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"M_Studio","telephone":"+7 499 288-24-13","address":{"@type":"PostalAddress","streetAddress":"Уральская ул., 6к1","addressLocality":"Москва","addressCountry":"RU"}}</script>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>M_Studio — маникюр и педикюр на Уральской, 6к1 у метро Щёлковская</title>
+<meta name="description" content="Ногтевая студия M_Studio на Уральской улице, 6к1: маникюр от 950 ₽, педикюр от 2000 ₽, покрытие Luxio и Beautix. Рейтинг 4,9 по 1586 оценкам. Запись онлайн и в WhatsApp.">
+<meta name="theme-color" content="#f6eefb">
+<meta property="og:title" content="M_Studio — ногтевая студия у метро Щёлковская">
+<meta property="og:description" content="Маникюр, педикюр, наращивание. 4,9 по 1586 оценкам, 1042 отзыва.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NailSalon","name":"M_Studio","telephone":"+74992882413","address":{"@type":"PostalAddress","streetAddress":"Уральская улица, 6к1","addressLocality":"Москва","postalCode":"107207","addressCountry":"RU"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"1586","reviewCount":"1042"},"priceRange":"950–4000 ₽","sameAs":["https://taplink.cc/m_studio_moscow"]}
+</script>
 <style>
-:root{--c:#d1457a;--bg:#f6f5f2;--tx:#17171a;--mut:#62626b;--card:#fff;--line:rgba(20,20,30,.1)}
-@media(prefers-color-scheme:dark){:root{--bg:#121214;--tx:#f3f3f1;--mut:#a4a4ad;--card:#1c1c20;--line:rgba(255,255,255,.12)}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.6 Manrope,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);padding-bottom:76px}
-.w{max-width:880px;margin:0 auto;padding:0 20px}
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
-.logo{font-weight:800;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.logo i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:8px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:800;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-1px)}
-.btn.p{background:var(--c);color:#fff;box-shadow:0 8px 22px -8px var(--c)}
-.btn.s{background:transparent;color:inherit;border-color:var(--line)}
-.top .btn{padding:9px 14px;font-size:14px}
-.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,var(--c),color-mix(in srgb,var(--c) 45%,#0b0b0f));padding:64px 0 56px}
-.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.1)}
-.hero:before{width:360px;height:360px;right:-120px;top:-140px}.hero:after{width:220px;height:220px;right:60px;bottom:-130px;background:rgba(255,255,255,.07)}
-.hero .w{position:relative}
-.kicker{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin:0 0 14px}
-h1{margin:0 0 16px;font-size:clamp(32px,7.5vw,56px);line-height:1.05;letter-spacing:-.03em;font-weight:800;max-width:15em}
-.lead{max-width:34em;font-size:18px;opacity:.93;margin:0 0 24px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
-.chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:99px;font-size:14px;font-weight:600}
-.hero .btn.p{background:#fff;color:#111;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
-.hero .btn.s{color:#fff;border-color:rgba(255,255,255,.5)}
-.cta{display:flex;flex-wrap:wrap;gap:10px}
-section{padding:44px 0 4px}
-h2{margin:0 0 6px;font-size:28px;letter-spacing:-.02em;font-weight:800}
-.sub{margin:0 0 20px;color:var(--mut)}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-.svc{display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-height:112px}
-.svc b{font-size:20px;color:var(--c);letter-spacing:-.01em}
-.svc span{font-weight:600}
-.note{font-size:13px;color:var(--mut);margin-top:12px}
-.pts{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin-top:14px}
-.pt{display:flex;gap:10px;align-items:flex-start;font-weight:600}
-.pt svg{flex:none;margin-top:3px;color:#fff;background:var(--c);border-radius:50%;padding:3px;width:22px;height:22px}
-.steps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:s}
-.step{counter-increment:s}.step:before{content:counter(s);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--c);color:#fff;font-weight:800;margin-bottom:12px}
-.step b{display:block;margin-bottom:2px}.step span{color:var(--mut);font-size:15px}
-.ct{display:grid;gap:14px}.ci{display:flex;gap:12px;align-items:flex-start}.ci svg{flex:none;color:var(--c);margin-top:3px}
-.ci small{display:block;color:var(--mut)}a{color:inherit}.ci a{font-weight:700}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0));background:var(--card);border-top:1px solid var(--line)}
-.bar .btn{flex:1;justify-content:center}
-@media(min-width:760px){.bar{display:none}body{padding-bottom:0}}
-footer{padding:44px 0 40px;color:var(--mut);font-size:13px}
-.rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-</style></head><body>
-<div class="top"><div class="w"><div class="logo"><i></i>M_Studio</div><a class="btn p" href="tel:+74992882413"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+7 499 288-24-13</a></div></div>
-<header class="hero"><div class="w">
-<p class="kicker">Ногтевая студия · м. Уральская ул.</p><h1>M_Studio</h1><p class="lead">Маникюр и педикюр, наращивание. «Good place 2026» на Яндекс Картах: 4,9 по 1 586 оценкам.</p>
-<div class="chips"><span class="chip">★ 4,9 · 1 042 отзыва</span><span class="chip">Good place 2026</span><span class="chip">Онлайн-запись</span></div>
-<div class="cta"><a class="btn p" href="tel:+74992882413"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Записаться онлайн</a><a class="btn s" href="https://wa.me/79264682228"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>WhatsApp</a></div>
-</div></header>
-<main class="w">
-<section class="rv"><h2>Услуги и цены</h2><p class="sub">Актуальную стоимость уточним при записи.</p>
-<div class="grid"><div class="card svc"><span>Маникюр с покрытием (быстросохнущий лак)</span><b>1 500 ₽</b></div><div class="card svc"><span>Классический маникюр с покрытием</span><b>1 500–2 400 ₽</b></div><div class="card svc"><span>SMART-педикюр</span><b>2 450 ₽</b></div><div class="card svc"><span>Аппаратный педикюр (комбо «Шальная императрица», BEAUTIX)</span><b>2 000 ₽</b></div></div>
-<div class="pts"><div class="pt"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Наращивание ногтей</span></div><div class="pt"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Оплата картой</span></div></div></section>
-<section class="rv"><h2>Как записаться</h2><p class="sub">Три простых шага.</p><div class="steps">
-<div class="card step"><b>Позвоните или напишите</b><span>Телефон или WhatsApp — как вам удобнее.</span></div>
-<div class="card step"><b>Согласуем детали</b><span>Подберём услугу и удобное время.</span></div>
-<div class="card step"><b>Приходите</b><span>Ждём вас по адресу: Уральская ул., 6к1.</span></div></div></section>
-<section class="rv" id="contacts"><h2>Контакты</h2><p class="sub">Мы в Москве — приезжайте или напишите заранее.</p><div class="card ct">
-<div class="ci"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%D0%BA1">Москва, Уральская ул., 6к1</a><small>Открыть на карте</small></div></div>
-<div class="ci"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Работаем до 23:00, запись обязательна</b></div></div>
-<div class="ci"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+74992882413">+7 499 288-24-13</a><small>Звонок или WhatsApp</small></div></div>
+:root{
+  --bg:#fbf6fd;--surface:#ffffff;--ink:#2a2036;--muted:#6f6480;--lilac:#b09fde;--plum:#734e9f;--blush:#f4d9e8;--line:#e6dcf1;--cta:#734e9f;--cta-ink:#fff;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17111f;--surface:#221a2e;--ink:#f1eaf8;--muted:#b3a6c6;--lilac:#b09fde;--plum:#c9b6f0;--blush:#3a2540;--line:#35294a;--cta:#b09fde;--cta-ink:#1a1226}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 Manrope,system-ui,sans-serif;padding-bottom:84px;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{padding:0 20px;max-width:980px;margin:0 auto}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:96px 20px 110px;overflow:hidden;background:linear-gradient(160deg,#efe4fb 0%,#f8dcea 55%,#e3d8fa 100%);color:#2a2036}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero{background:linear-gradient(160deg,#2a1d3c 0%,#43264a 55%,#241b3d 100%);color:#f1eaf8}}
+.hero svg.art{position:absolute;right:-30px;top:40px;width:min(88vw,520px);height:auto;opacity:1;animation:float 9s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px) rotate(2deg)}}
+@media (prefers-reduced-motion:reduce){.hero svg.art{animation:none}}
+.brand{position:absolute;top:24px;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;font-weight:700;letter-spacing:.14em;font-size:13px;text-transform:uppercase}
+.brand a{text-decoration:none;padding:8px 14px;border:1px solid currentColor;border-radius:99px;font-size:12px;letter-spacing:.06em}
+.hero h1{font-size:clamp(46px,13vw,104px);position:relative;max-width:11ch}
+.hero h1 em{font-style:italic;color:var(--plum)}
+.hero p.lead{position:relative;margin:16px 0 24px;max-width:34ch;font-size:17px}
+.badges{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.badge{background:rgba(255,255,255,.66);backdrop-filter:blur(6px);padding:8px 14px;border-radius:99px;font-size:13.5px;font-weight:500;color:#2a2036}
+.badge b{color:#734e9f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .badge{background:rgba(255,255,255,.12);color:#f1eaf8}:root:not([data-theme="light"]) .badge b{color:#d9c8f7}}
+.btns{position:relative;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:99px;font-weight:700;text-decoration:none;font-size:15px;border:1.5px solid transparent}
+.btn.primary{background:var(--cta);color:var(--cta-ink)}
+.btn.ghost{border-color:currentColor}
+/* sections */
+section{padding:64px 0}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--plum);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(34px,8vw,56px);margin-bottom:22px}
+/* price */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 18px;border-radius:99px;font:500 14.5px Manrope;cursor:pointer}
+.tab[aria-selected=true]{background:var(--plum);color:#fff;border-color:var(--plum)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tab[aria-selected=true]{color:#1a1226}}
+.plist{display:none;list-style:none;padding:0;background:var(--surface);border-radius:24px;border:1px solid var(--line);overflow:hidden}
+.plist.on{display:block}
+.plist li{display:flex;justify-content:space-between;gap:16px;padding:15px 20px;border-bottom:1px solid var(--line);align-items:baseline}
+.plist li:last-child{border:0}
+.plist span.n{flex:1}
+.plist span.p{font-weight:700;white-space:nowrap;color:var(--plum)}
+.note{color:var(--muted);font-size:13.5px;margin-top:12px}
+/* brands */
+.brands{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:20px}
+.card h3{font-size:26px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:14.5px}
+.blush{background:var(--blush)}
+/* reviews */
+.rev-top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+.big{font:600 84px/1 "Cormorant Garamond",serif;color:var(--plum)}
+.bars{display:grid;gap:10px;margin-bottom:26px}
+.bar{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;font-size:14px}
+.bar i{display:block;height:8px;border-radius:9px;background:var(--line);position:relative;overflow:hidden}
+.bar i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);background:linear-gradient(90deg,var(--lilac),var(--plum));border-radius:9px}
+.bar small{color:var(--muted);text-align:right}
+.quotes{display:grid;gap:12px}
+.quotes p{background:var(--surface);border-left:4px solid var(--lilac);padding:16px 18px;border-radius:0 18px 18px 0;font-size:15px}
+/* net */
+.net{display:grid;gap:10px;list-style:none;padding:0}
+.net li{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 18px;display:flex;gap:12px;align-items:center}
+.net li.here{background:var(--plum);color:#fff;border-color:var(--plum)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .net li.here{color:#1a1226}}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--lilac);flex:none}
+.here .dot{background:#fff}
+/* contact */
+.contact{background:linear-gradient(160deg,var(--blush),var(--surface));border-radius:32px;padding:32px 22px;border:1px solid var(--line)}
+.contact dl{display:grid;gap:14px;margin:20px 0}
+.contact dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.contact dd{font-size:18px;font-weight:500}
+footer{padding:28px 20px 12px;text-align:center;color:var(--muted);font-size:12.5px}
+/* sticky */
+.bar-fixed{position:fixed;z-index:20;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;gap:8px;padding:8px;background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:99px;box-shadow:0 10px 30px rgba(80,40,120,.2);max-width:560px;margin:0 auto}
+.bar-fixed a{flex:1;min-height:46px;display:flex;align-items:center;justify-content:center;border-radius:99px;text-decoration:none;font-weight:700;font-size:14.5px}
+.bar-fixed .rec{background:var(--cta);color:var(--cta-ink);flex:1.6}
+.bar-fixed .wa{background:#25a560;color:#fff}
+.bar-fixed .ph{border:1.5px solid var(--line)}
+@media(min-width:760px){.brands{grid-template-columns:repeat(4,1fr)}.quotes{grid-template-columns:repeat(3,1fr)}.quotes p{border-radius:0 18px 18px 0}.hero{padding-left:max(20px,calc(50vw - 490px));padding-right:20px}.brand{left:max(20px,calc(50vw - 490px));right:max(20px,calc(50vw - 490px))}.net{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
 
-<div class="cta"><a class="btn p" href="tel:+74992882413"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Записаться онлайн</a><a class="btn s" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A3%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%D0%BA1"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Построить маршрут</a></div></div></section>
+<header class="hero">
+  <div class="brand"><span>M_Studio</span><a href="tel:+74992882413">+7 499 288-24-13</a></div>
+  <svg class="art" viewBox="0 0 400 420" aria-hidden="true" role="img">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9c8f7"/><stop offset="1" stop-color="#b09fde"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe4f0"/><stop offset="1" stop-color="#f2a9cb"/></linearGradient>
+      <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e8dcfa"/></linearGradient>
+      <radialGradient id="sh" cx=".3" cy=".2" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle cx="210" cy="210" r="170" fill="#fff" opacity=".35"/>
+    <g transform="rotate(-14 90 260)"><path d="M62 330V150c0-46 56-46 56 0v180z" fill="url(#g1)"/><ellipse cx="82" cy="124" rx="12" ry="46" fill="url(#sh)" transform="rotate(8 82 124)"/></g>
+    <g transform="rotate(-5 160 260)"><path d="M132 340V110c0-54 62-54 62 0v230z" fill="url(#g2)"/><path d="M146 120c4-30 28-30 32 0" stroke="#fff" stroke-width="6" fill="none" opacity=".7" stroke-linecap="round"/></g>
+    <g transform="rotate(5 238 260)"><path d="M206 345V90c0-58 66-58 66 0v255z" fill="url(#g3)"/><path d="M218 100c4-30 28-30 32 0" stroke="#b09fde" stroke-width="5" fill="none" opacity=".8" stroke-linecap="round"/><circle cx="239" cy="150" r="5" fill="#b09fde"/><circle cx="239" cy="172" r="3.5" fill="#f2a9cb"/></g>
+    <g transform="rotate(14 318 270)"><path d="M290 335V135c0-50 58-50 58 0v200z" fill="url(#g1)"/><ellipse cx="310" cy="120" rx="10" ry="40" fill="url(#sh)"/></g>
+    <g fill="#fff"><path d="M330 40l6 18 18 6-18 6-6 18-6-18-18-6 18-6z"/><path d="M60 70l4 12 12 4-12 4-4 12-4-12-12-4 12-4z" opacity=".8"/></g>
+  </svg>
+  <h1>Ногти, <em>которые</em> хочется показать</h1>
+  <p class="lead">Маникюр, педикюр и наращивание на Уральской, 6к1. Кофе, уют и мастера, которых хвалят в отзывах.</p>
+  <div class="badges">
+    <span class="badge"><b>4,9</b> по 1 586 оценкам</span>
+    <span class="badge"><b>1 042</b> отзыва</span>
+    <span class="badge">Хорошее место 2026</span>
+  </div>
+  <div class="btns">
+    <a class="btn primary" href="https://n161729.yclients.com/group:86016/city:all#1" target="_blank" rel="noopener">Записаться онлайн</a>
+    <a class="btn ghost" href="#price">Цены</a>
+  </div>
+</header>
+
+<main class="wrap">
+<section id="price">
+  <div class="eyebrow">Прайс</div>
+  <h2>Цены на услуги</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-t="m">Маникюр</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="c">Комплексы</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="p">Педикюр</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="k">Дети и уход</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="e">4 руки и наращивание</button>
+  </div>
+  <ul class="plist on" id="t-m">
+    <li><span class="n">Классический без покрытия</span><span class="p">950 ₽</span></li>
+    <li><span class="n">Комбинированный / аппаратный без покрытия</span><span class="p">1 000 ₽</span></li>
+    <li><span class="n">Мужской маникюр</span><span class="p">1 000 ₽</span></li>
+    <li><span class="n">Маникюр + быстросохнущий лак</span><span class="p">1 500 ₽</span></li>
+    <li><span class="n">Аппаратный + гель-лак Beautix</span><span class="p">2 450 ₽</span></li>
+    <li><span class="n">Аппаратный + гель-лак Luxio</span><span class="p">2 700 ₽</span></li>
+    <li><span class="n">Втирка / френч / кошка (10 ногтей)</span><span class="p">600 ₽</span></li>
+  </ul>
+  <ul class="plist" id="t-c">
+    <li><span class="n">Комплекс Beautix: классический маникюр, снятие, покрытие</span><span class="p">2 400 ₽</span></li>
+    <li><span class="n">Базовый комплекс Beautix</span><span class="p">2 950 ₽</span></li>
+    <li><span class="n">Базовый комплекс Luxio</span><span class="p">3 350 ₽</span></li>
+    <li><span class="n">Цветной гель / коррекция</span><span class="p">3 300 ₽</span></li>
+    <li><span class="n">Снятие гель-лака без маникюра</span><span class="p">400 ₽</span></li>
+    <li><span class="n">Снятие геля</span><span class="p">500 ₽</span></li>
+    <li><span class="n">Ремонт ногтя (шёлк / акриловая пудра)</span><span class="p">250 ₽</span></li>
+    <li><span class="n">Ремонт ногтя (гель)</span><span class="p">350 ₽</span></li>
+  </ul>
+  <ul class="plist" id="t-p">
+    <li><span class="n">Комбинированный гигиенический</span><span class="p">2 000 ₽</span></li>
+    <li><span class="n">Мужской гигиенический</span><span class="p">2 200 ₽</span></li>
+    <li><span class="n">Педикюр + быстросохнущий лак</span><span class="p">2 200 ₽</span></li>
+    <li><span class="n">Педикюр + гель-лак Beautix</span><span class="p">2 550 ₽</span></li>
+    <li><span class="n">Педикюр + гель-лак Luxio</span><span class="p">2 800 ₽</span></li>
+    <li><span class="n">Smart-педикюр</span><span class="p">2 450 ₽</span></li>
+    <li><span class="n">Smart + быстросохнущий лак</span><span class="p">2 800 ₽</span></li>
+    <li><span class="n">Smart + Beautix</span><span class="p">3 450 ₽</span></li>
+    <li><span class="n">Smart + Luxio</span><span class="p">3 700 ₽</span></li>
+    <li><span class="n">Мужской Smart</span><span class="p">2 750 ₽</span></li>
+    <li><span class="n">Укрепление / реставрация ногтя</span><span class="p">300 ₽</span></li>
+  </ul>
+  <ul class="plist" id="t-k">
+    <li><span class="n">Детский маникюр с лаком (до 12 лет)</span><span class="p">500 ₽</span></li>
+    <li><span class="n">Детский маникюр + дизайн (до 3 ногтей)</span><span class="p">700 ₽</span></li>
+    <li><span class="n">SPA: скраб + парафин</span><span class="p">700 ₽</span></li>
+  </ul>
+  <ul class="plist" id="t-e">
+    <li><span class="n">«Шальная императрица»: классический маникюр Beautix в 4 руки</span><span class="p">2 000 ₽</span></li>
+    <li><span class="n">«Шальная императрица»: аппаратный педикюр Beautix в 4 руки</span><span class="p">2 000 ₽</span></li>
+    <li><span class="n">Наращивание ногтей 2D</span><span class="p">4 000 ₽</span></li>
+  </ul>
+  <p class="note">Цены по публичной карточке студии, точную стоимость подтвердит администратор при записи.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Материалы</div>
+  <h2>Покрытия и техники</h2>
+  <div class="brands">
+    <div class="card blush"><h3>Luxio</h3><p>Гель-лаки в маникюре и педикюре.</p></div>
+    <div class="card"><h3>Beautix</h3><p>Комплексы с покрытием по выгодной цене.</p></div>
+    <div class="card"><h3>Smart</h3><p>Педикюр Smart для женщин и мужчин.</p></div>
+    <div class="card blush"><h3>Аппаратный</h3><p>Аппаратный и комбинированный маникюр и педикюр, парафин, дизайн.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Отзывы</div>
+  <h2>Что говорят гостьи</h2>
+  <div class="rev-top"><div class="big">4,9</div><div><b>1 586 оценок</b><br>1 042 отзыва на Яндекс Картах</div></div>
+  <div class="bars" aria-label="Темы отзывов, доля положительных">
+    <div class="bar"><span>Расположение</span><i style="--w:97%"></i><small>97%</small></div>
+    <div class="bar"><span>Атмосфера</span><i style="--w:94%"></i><small>94%</small></div>
+    <div class="bar"><span>Чистота</span><i style="--w:91%"></i><small>91%</small></div>
+    <div class="bar"><span>Кофе</span><i style="--w:89%"></i><small>89%</small></div>
+    <div class="bar"><span>Компетентность</span><i style="--w:83%"></i><small>83%</small></div>
+  </div>
+  <div class="quotes">
+    <p>Гостьи хвалят мастеров Турсунай, Нурию и Анару за аккуратную работу и внимание.</p>
+    <p>В отзывах отмечают уютную, спокойную атмосферу и кофе.</p>
+    <p>Одна из гостий рассказывает, что мастер проверила температуру воды перед педикюром.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Адреса</div>
+  <h2>Одна сеть, четыре студии</h2>
+  <ul class="net">
+    <li class="here"><span class="dot"></span>Уральская улица, 6к1 (эта студия)</li>
+    <li><span class="dot"></span>Свободный проспект, 33Б</li>
+    <li><span class="dot"></span>Зеленодольская улица, 45к1</li>
+    <li><span class="dot"></span>улица Маршала Чуйкова, 3</li>
+  </ul>
+  <p class="note">Единый номер студий и общая онлайн-запись. Есть мобильное приложение M Studio.</p>
+</section>
+
+<section id="contacts">
+  <div class="contact">
+    <div class="eyebrow">Контакты</div>
+    <h2>Приходите на Уральскую</h2>
+    <dl>
+      <div><dt>Адрес</dt><dd>Москва, Уральская улица, 6к1</dd></div>
+      <div><dt>Метро</dt><dd>Щёлковская, 164 м</dd></div>
+      <div><dt>Телефон</dt><dd><a href="tel:+74992882413">+7 499 288-24-13</a></dd></div>
+      <div><dt>Запись</dt><dd>Предварительная, онлайн или в WhatsApp</dd></div>
+      <div><dt>Оплата</dt><dd>Картой, есть санузел. Без животных. Для кресел-колясок вход не оборудован.</dd></div>
+    </dl>
+    <div class="btns">
+      <a class="btn primary" href="https://n161729.yclients.com/group:86016/city:all#1" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="https://wa.me/79264682228">WhatsApp</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer><div class="w">Демо-версия сайта. Данные взяты из публичных карточек организации и будут уточнены с владельцем перед публикацией.</div></footer>
-<div class="bar"><a class="btn p" href="tel:+74992882413"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Позвонить</a><a class="btn s" href="https://wa.me/79264682228"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>WhatsApp</a></div>
-<script>const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(e=>o.observe(e));</script>
-</body></html>
+
+<footer>Демо-версия сайта, данные из публичных карточек</footer>
+
+<nav class="bar-fixed" aria-label="Быстрая запись">
+  <a class="ph" href="tel:+74992882413" aria-label="Позвонить">Позвонить</a>
+  <a class="rec" href="https://n161729.yclients.com/group:86016/city:all#1" target="_blank" rel="noopener">Записаться</a>
+  <a class="wa" href="https://wa.me/79264682228" aria-label="WhatsApp">WhatsApp</a>
+</nav>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+  document.querySelectorAll('.plist').forEach(function(l){l.classList.toggle('on',l.id==='t-'+b.dataset.t)});
+})});
+</script>
+</body>
+</html>
