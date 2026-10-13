@@ -18,6 +18,7 @@
 <style>
 :root{--bg:#efe6d8;--bg2:#e6dac8;--ink:#2b221b;--mut:#6f6254;--acc:#a8573a;--line:rgba(43,34,27,.18);--card:#f6efe3}
 @media(prefers-color-scheme:dark){:root{--bg:#1c1713;--bg2:#241d17;--ink:#eadfce;--mut:#a39482;--acc:#d9906f;--line:rgba(234,223,206,.18);--card:#221b15}}
+html,body{overflow-x:clip}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font:300 17px/1.65 Jost,system-ui,sans-serif;padding-bottom:84px;overflow-x:hidden}
@@ -26,7 +27,7 @@ a{color:inherit}
 h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05}
 .top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
 .top a{text-decoration:none;color:var(--mut)}
-.hero{padding:30px 0 56px;position:relative}
+.hero{padding:30px 0 56px;position:relative;overflow:clip}
 .hero svg{position:absolute;right:-90px;top:-10px;width:340px;opacity:.55;z-index:0}
 .hero>*{position:relative;z-index:1}
 h1{font-size:clamp(76px,26vw,150px);font-style:italic;font-weight:400;letter-spacing:-.02em;margin:24px 0 10px}
