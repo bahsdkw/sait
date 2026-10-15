@@ -1,0 +1,30 @@
+{
+    // Конфигурации отладки программы (вариант 27)
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Отладка: вариант 27 (seed = 27)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/Variant27.dll",
+            "args": ["27"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "justMyCode": true,
+            "env": { "DOTNET_ENVIRONMENT": "Development" }
+        },
+        {
+            "name": "Отладка: ввод цен с клавиатуры",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/Variant27.dll",
+            "args": ["--manual"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": true
+        }
+    ]
+}
