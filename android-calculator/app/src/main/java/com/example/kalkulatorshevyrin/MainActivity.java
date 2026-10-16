@@ -1,8 +1,7 @@
-package com.example.calculator;
-
-import android.os.Bundle;
+package com.example.kalkulatorshevyrin;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 public class MainActivity extends Activity {
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Системная тема без заголовка, внешние библиотеки не нужны -->
+    <style name="Theme.Calculator" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:statusBarColor">@color/calc_dark</item>
+        <item name="android:navigationBarColor">@color/calc_dark_deep</item>
+    </style>
+</resources>
