@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Три основных цвета дизайна: тёмный, оранжевый, белый -->
+    <color name="calc_dark">#1E1E24</color>          <!-- 1. тёмный: фон, текст на светлой кнопке -->
+    <color name="calc_orange">#E65100</color>        <!-- 2. оранжевый: операции и "=" -->
+    <color name="calc_white">#FFFFFF</color>         <!-- 3. белый: весь текст, кнопка C -->
+
+    <!-- Оттенки тех же цветов (не новые цвета) -->
+    <color name="calc_dark_deep">#101014</color>     <!-- низ градиента фона -->
+    <color name="calc_white_soft">#26FFFFFF</color>  <!-- белый, 15% непрозрачности: кнопки с цифрами -->
+    <color name="calc_white_ripple">#55FFFFFF</color><!-- эффект нажатия -->
+</resources>

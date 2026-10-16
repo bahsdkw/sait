@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Кнопка со скруглёнными углами и эффектом нажатия (ripple) -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/calc_white_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/calc_white_soft" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+</ripple>

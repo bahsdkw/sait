@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Градиентный фон экрана: сверху вниз, от тёмного к более тёмному -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="@color/calc_dark"
+        android:endColor="@color/calc_dark_deep" />
+</shape>
