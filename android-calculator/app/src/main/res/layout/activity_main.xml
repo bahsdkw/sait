@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Корневой контейнер: вертикальный LinearLayout, внутри экран и 5 строк кнопок -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Экран: занимает 2 части высоты, текст прижат к правому нижнему углу -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Строка с выражением, например "12 ×" -->
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textColor="@color/accent"
+            android:textSize="28sp" />
+
+        <!-- Основное число: размер сам уменьшается, если число длинное -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="72sp"
+            android:autoSizeMinTextSize="32sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Строка 1 из 5: кнопки делят ширину поровну (layout_weight) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CalcButton.Action"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClearClick"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/CalcButton.Action"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onBackspaceClick"
+            android:text="⌫" />
+
+        <Button
+            android:id="@+id/btnSign"
+            style="@style/CalcButton.Action"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onSignClick"
+            android:text="±" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            style="@style/CalcButton.Operator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onOperatorClick"
+            android:text="÷" />
+    </LinearLayout>
+
+    <!-- Строка 2 из 5: кнопки делят ширину поровну (layout_weight) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnMul"
+            style="@style/CalcButton.Operator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onOperatorClick"
+            android:text="×" />
+    </LinearLayout>
+
+    <!-- Строка 3 из 5: кнопки делят ширину поровну (layout_weight) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnSub"
+            style="@style/CalcButton.Operator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onOperatorClick"
+            android:text="−" />
+    </LinearLayout>
+
+    <!-- Строка 4 из 5: кнопки делят ширину поровну (layout_weight) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDigitClick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/CalcButton.Operator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onOperatorClick"
+            android:text="+" />
+    </LinearLayout>
+
+    <!-- Строка 5 из 5: кнопки делят ширину поровну (layout_weight) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:onClick="onDigitClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/CalcButton.Digit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onDotClick"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnEq"
+            style="@style/CalcButton.Operator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onEqualsClick"
+            android:text="=" />
+    </LinearLayout>
+
+</LinearLayout>
