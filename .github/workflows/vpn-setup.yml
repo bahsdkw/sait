@@ -1,0 +1,56 @@
+name: VPN panel setup
+
+on:
+  workflow_dispatch:
+    inputs:
+      clients:
+        description: "Number of VPN users to create"
+        default: "3"
+      reality_sni:
+        description: "Reality camouflage site"
+        default: "www.microsoft.com"
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run setup over SSH
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          PANEL_PASSWORD: ${{ secrets.PANEL_PASSWORD }}
+          PANEL_PATH: ${{ secrets.PANEL_PATH }}
+          CLIENTS: ${{ inputs.clients }}
+          REALITY_SNI: ${{ inputs.reality_sni }}
+        run: |
+          set -euo pipefail
+          for v in SSH_HOST PANEL_PASSWORD PANEL_PATH; do
+            [ -n "${!v}" ] || { echo "Missing repository secret: $v"; exit 1; }
+          done
+          user="${SSH_USER:-root}"
+          port="${SSH_PORT:-22}"
+          opts=(-p "$port" -o StrictHostKeyChecking=accept-new -o ConnectTimeout=20 -o ServerAliveInterval=30)
+          if [ -n "$SSH_KEY" ]; then
+            install -m 600 /dev/null ~/key
+            printf '%s\n' "$SSH_KEY" > ~/key
+            ssh_cmd=(ssh -i ~/key "${opts[@]}")
+          elif [ -n "$SSH_PASSWORD" ]; then
+            sudo apt-get install -y -qq sshpass >/dev/null
+            export SSHPASS="$SSH_PASSWORD"
+            ssh_cmd=(sshpass -e ssh -o PubkeyAuthentication=no "${opts[@]}")
+          else
+            echo "Missing repository secret: SSH_KEY or SSH_PASSWORD"; exit 1
+          fi
+          prefix=""
+          [ "$user" = root ] || prefix="sudo -E"
+          {
+            printf 'export PANEL_PASSWORD=%q PANEL_PATH=%q CLIENTS=%q REALITY_SNI=%q\n' \
+              "$PANEL_PASSWORD" "$PANEL_PATH" "$CLIENTS" "$REALITY_SNI"
+            cat vpn/setup-3xui.sh
+          } | "${ssh_cmd[@]}" "$user@$SSH_HOST" "$prefix bash -s"
